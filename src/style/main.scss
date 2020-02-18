@@ -62,9 +62,9 @@ text-align: center;
 
     display: grid;
     grid-template-rows: 1fr 50px;
-
+    background-color: white;
     &__inputs {
-        background-color: skyblue;
+        
         display: grid;
         grid-template-rows: repeat(4, 1fr);
         grid-template-columns: repeat(4, 1fr);
@@ -77,16 +77,35 @@ text-align: center;
 }
 
 .input {
+    font-family: 'Montserrat';
     display: grid;
+    
     grid-template-columns: [number-s] 26px [number-e input-s]1fr [input-e];
+    text-align: center;
     &__title {
         grid-column: input-s/input-e;
+        border-top: 1px solid #B3B3B3;
+        color: #B3B3B3;
+        font-size: 12px;
+        font-weight: 300;
+
     }
     .input {
         grid-column: input-s/input-e;
+        border: none;
+        width: 190px;
+        height: 40px;
+        
+
     }
     &__number {
         grid-column: number-s/number-e;
-
+        background-color: #00CB79;
+        color: white;
+        font-size: 20px;
+        text-align: center;
+        line-height: 24px;
+        //padding-top: 3px;
+        border-radius: 50%;
     }
 }
